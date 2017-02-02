@@ -14,7 +14,8 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -24,17 +25,22 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Contact</li>
+    </ol>
+
+    <div class="page-header">
+        <h1>Contact</h1>
+    </div>
+
     <div class="row">
-        <div class="col-xs-12">
-            <h1>Contact</h1>
-        </div>
         <div class="col-xs-12 col-sm-6">
             <address>
                 Street HouseNr<br>
@@ -43,56 +49,62 @@
             </address>
         </div>
         <div class="col-xs-12 col-sm-6">
-            <form method="post">
-                <fieldset>
-                    <legend>Don't hesitate to contact me</legend>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="prefix" id="prefix1" value="Mr" checked>
-                            Mr
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="prefix" id="prefix2" value="Mrs">
-                            Mrs
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="prefix" id="prefix3" value="Miss">
-                            Miss
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" minlength="2" name="name" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" minlength="5" name="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telephone">Phone number</label>
-                        <input type="text" minlength="10" name="telephone" id="telephone" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea minlength="2" name="message" id="message" class="form-control" rows="3" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="attachment">Attachment</label>
-                        <input type="file" name="attachment" id="attachment">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="answer" id="answer" value="yes">
-                            I need an answer
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Apply</button>
-                </fieldset>
-            </form>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Don't hesitate to contact me</h3>
+                </div>
+                <div class="panel-body">
+                    <form method="post">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="prefix" id="prefix1" value="Mr" checked>
+                                Mr
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="prefix" id="prefix2" value="Mrs">
+                                Mrs
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="prefix" id="prefix3" value="Miss">
+                                Miss
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" minlength="2" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" minlength="5" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Phone number</label>
+                            <input type="text" minlength="10" name="telephone" id="telephone" class="form-control"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea minlength="2" name="message" id="message" class="form-control" rows="3"
+                                      required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="attachment">Attachment</label>
+                            <input type="file" name="attachment" id="attachment">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="answer" id="answer" value="yes">
+                                I need an answer
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Apply</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
